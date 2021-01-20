@@ -1,0 +1,105 @@
+{
+  "4af4af41": {
+    "collection": "categories",
+    "query": {
+      "limit": "6",
+      "sort": [],
+      "expand": []
+    }
+  },
+  "-5cff1694": {
+    "collection": "blog",
+    "query": {
+      "fields": [
+        {
+          "fieldPath": "is-this-featured",
+          "operatorName": "eq",
+          "value": "true"
+        }
+      ],
+      "limit": "2",
+      "sort": [
+        "-created-on"
+      ],
+      "expand": [
+        "authors",
+        "category"
+      ]
+    }
+  },
+  "-52ca7021": {
+    "collection": "blog",
+    "query": {
+      "limit": 8,
+      "fields": [
+        {
+          "fieldPath": "is-this-featured",
+          "operatorName": "ne",
+          "value": "true"
+        }
+      ],
+      "sort": [
+        "-created-on"
+      ]
+    }
+  },
+  "-7e27b183": {
+    "collection": "blog",
+    "query": {
+      "fields": [
+        {
+          "fieldPath": "category",
+          "operatorName": "eq",
+          "value": "DYN_CONTEXT"
+        }
+      ],
+      "limit": 8,
+      "sort": [
+        "-created-on"
+      ]
+    }
+  },
+  "-63ee2418": {
+    "collection": "categories"
+  },
+  "-558bb635": {
+    "collection": "blog",
+    "query": {
+      "limit": "4",
+      "fields": [
+        {
+          "fieldPath": "authors",
+          "operatorName": "eq",
+          "value": "DYN_CONTEXT"
+        }
+      ],
+      "sort": [
+        "-created-on"
+      ],
+      "expand": [
+        "authors",
+        "category"
+      ]
+    }
+  },
+  "-291ee7eb": {
+    "collection": "blog",
+    "query": {
+      "fields": [
+        {
+          "fieldPath": "category",
+          "operatorName": "eq",
+          "value": "DYN_CONTEXT.category"
+        }
+      ],
+      "limit": "8",
+      "sort": [
+        "-created-on"
+      ],
+      "expand": [
+        "authors",
+        "category"
+      ]
+    }
+  }
+}
